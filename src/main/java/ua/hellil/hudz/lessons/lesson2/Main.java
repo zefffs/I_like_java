@@ -11,7 +11,6 @@ public class Main {
 
         int intVariable = 2147000000;
 
-        long longVariable = 21470000000000
 
 
         float floatVariable = 1.111111111111111111111111F;
