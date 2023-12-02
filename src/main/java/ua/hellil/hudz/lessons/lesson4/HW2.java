@@ -25,18 +25,18 @@ public class HW2 {
 //        Вивести в консоль значення загальної атаки кожної армії;
 
 
-         int liWarion = 13;
+         int liWarrior = 13;
          int liArcher = 24;
          int liRider = 46;
          int liNuberOfPeople = 860;
 
-         int minWarion = 9;
+         int minWarrior = 9;
          int minArcher = 35;
          int minRider = 12;
          int minNuberOfPeople = (int) (liNuberOfPeople * 1.5);
 
-         int liStrong = (liArcher + liRider + liWarion) * liNuberOfPeople;
-         int minStrong = (minArcher + minRider + minWarion) * minNuberOfPeople;
+         int liStrong = (liArcher + liRider + liWarrior) * liNuberOfPeople;
+         int minStrong = (minArcher + minRider + minWarrior) * minNuberOfPeople;
 
          System.out.println("Загальний показник атаки династії Лі = " + liStrong);
          System.out.println("Загальний показник атаки династії Мінь = " + minStrong);
