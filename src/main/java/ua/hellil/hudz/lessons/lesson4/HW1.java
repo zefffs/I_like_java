@@ -26,11 +26,11 @@ public class HW1 {
 //        де MyApp - назва вашого класу/файлу
 
 
-        double volume;
-        double length;
-        double a = 12;
-        double b = 10;
-        double c = 8;
+        int volume;
+        int length;
+        int a = 12;
+        int b = 10;
+        int c = 8;
 
         volume = a * b * c;
         length = (a + b + c) * 4;

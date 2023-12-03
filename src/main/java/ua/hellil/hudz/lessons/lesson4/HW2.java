@@ -28,15 +28,15 @@ public class HW2 {
          int liWarrior = 13;
          int liArcher = 24;
          int liRider = 46;
-         int liNuberOfPeople = 860;
+         int liQuantity = 860;
 
          int minWarrior = 9;
          int minArcher = 35;
          int minRider = 12;
-         int minNuberOfPeople = (int) (liNuberOfPeople * 1.5);
+         int minQuantity = (int) (liQuantity * 1.5);
 
-         int liStrong = (liArcher + liRider + liWarrior) * liNuberOfPeople;
-         int minStrong = (minArcher + minRider + minWarrior) * minNuberOfPeople;
+         int liStrong = (liArcher + liRider + liWarrior) * liQuantity;
+         int minStrong = (minArcher + minRider + minWarrior) * minQuantity;
 
          System.out.println("Загальний показник атаки династії Лі = " + liStrong);
          System.out.println("Загальний показник атаки династії Мінь = " + minStrong);
