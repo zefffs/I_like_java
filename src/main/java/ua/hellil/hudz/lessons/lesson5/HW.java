@@ -15,12 +15,20 @@ public class HW {
 
         Scanner scanner = new Scanner(System.in);
 
-//       фргі гравців першої команди
+//       фрагі гравців першої команди
         int frag_1_playerFirstTeam = 0;
         int frag_2_playerFirstTeam = 0;
         int frag_3_playerFirstTeam = 0;
         int frag_4_playerFirstTeam = 0;
         int frag_5_playerFirstTeam = 0;
+
+//       фрагі гравців другої команди
+        int frag_1_playerSecondTeam = 0;
+        int frag_2_playerSecondTeam = 0;
+        int frag_3_playerSecondTeam = 0;
+        int frag_4_playerSecondTeam = 0;
+        int frag_5_playerSecondTeam = 0;
+
 
         System.out.println("Bвести ім'я першої команди");
         String nameFirstTeam = scanner.nextLine();
@@ -69,14 +77,6 @@ public class HW {
             System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
-
-
-
-        int frag_1_playerSecondTeam = 0;
-        int frag_2_playerSecondTeam = 0;
-        int frag_3_playerSecondTeam = 0;
-        int frag_4_playerSecondTeam = 0;
-        int frag_5_playerSecondTeam = 0;
 
         scanner.nextLine(); // очищуємо буфер від зайвих данних
 
@@ -128,8 +128,8 @@ public class HW {
             System.exit(0);
         }
 
-        double sum_nameFirstTeam = (frag_1_playerFirstTeam + frag_2_playerFirstTeam + frag_3_playerFirstTeam + frag_4_playerFirstTeam + frag_5_playerFirstTeam) / 5;
-        double sum_nameSecondTeam = (frag_1_playerSecondTeam + frag_2_playerSecondTeam + frag_3_playerSecondTeam + frag_4_playerSecondTeam + frag_5_playerSecondTeam) / 5;
+        double sum_nameFirstTeam = (double)  (frag_1_playerFirstTeam + frag_2_playerFirstTeam + frag_3_playerFirstTeam + frag_4_playerFirstTeam + frag_5_playerFirstTeam) / 5;
+        double sum_nameSecondTeam =  (double) (frag_1_playerSecondTeam + frag_2_playerSecondTeam + frag_3_playerSecondTeam + frag_4_playerSecondTeam + frag_5_playerSecondTeam) / 5;
 
         if (sum_nameSecondTeam > sum_nameFirstTeam){
             System.out.println("Перемогла команда " + nameSecondTeam + ", набрала " + sum_nameSecondTeam + " очків");
