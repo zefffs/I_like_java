@@ -24,15 +24,13 @@ public class HW {
 
         System.out.println("Bвести ім'я першої команди");
         String nameFirstTeam = scanner.nextLine();
-//        System.out.println(nameFirstTeam);
 
-//               Frag 1go player
+
         System.out.print("Ввести кількість фрагів 1 го гравця команди " + nameFirstTeam + ": ");
-
         if (scanner.hasNextInt()){
             frag_1_playerFirstTeam = scanner.nextInt();
         } else {
-            System.out.println("Ошибка ввода не коректні данні, перезапусти программу!");
+            System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
 
@@ -41,7 +39,7 @@ public class HW {
         if (scanner.hasNextInt()){
             frag_2_playerFirstTeam = scanner.nextInt();
         } else {
-            System.out.println("Ошибка ввода не коректні данні, перезапусти программу!");
+            System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
 
@@ -50,7 +48,7 @@ public class HW {
         if (scanner.hasNextInt()){
             frag_3_playerFirstTeam = scanner.nextInt();
         } else {
-            System.out.println("Ошибка ввода не коректні данні, перезапусти программу!");
+            System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
 
@@ -59,7 +57,7 @@ public class HW {
         if (scanner.hasNextInt()){
             frag_4_playerFirstTeam = scanner.nextInt();
         } else {
-            System.out.println("Ошибка ввода не коректні данні, перезапусти программу!");
+            System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
 
@@ -68,7 +66,7 @@ public class HW {
         if (scanner.hasNextInt()){
             frag_5_playerFirstTeam = scanner.nextInt();
         } else {
-            System.out.println("Ошибка ввода не коректні данні, перезапусти программу!");
+            System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
 
@@ -90,7 +88,7 @@ public class HW {
         if (scanner.hasNextInt()){
             frag_1_playerSecondTeam = scanner.nextInt();
         } else {
-            System.out.println("Ошибка ввода не коректні данні, перезапусти программу!");
+            System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
 
@@ -99,7 +97,7 @@ public class HW {
         if (scanner.hasNextInt()){
             frag_2_playerSecondTeam = scanner.nextInt();
         } else {
-            System.out.println("Ошибка ввода не коректні данні, перезапусти программу!");
+            System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
 
@@ -108,7 +106,7 @@ public class HW {
         if (scanner.hasNextInt()){
             frag_3_playerSecondTeam = scanner.nextInt();
         } else {
-            System.out.println("Ошибка ввода не коректні данні, перезапусти программу!");
+            System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
 
@@ -117,7 +115,7 @@ public class HW {
         if (scanner.hasNextInt()){
             frag_4_playerSecondTeam = scanner.nextInt();
         } else {
-            System.out.println("Ошибка ввода не коректні данні, перезапусти программу!");
+            System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
 
@@ -126,7 +124,7 @@ public class HW {
         if (scanner.hasNextInt()){
             frag_5_playerSecondTeam = scanner.nextInt();
         } else {
-            System.out.println("Ошибка ввода не коректні данні, перезапусти программу!");
+            System.out.println("Помилка ввода, данні не відповідають типу int, перезапусти программу!");
             System.exit(0);
         }
 
@@ -138,11 +136,11 @@ public class HW {
         } else if (sum_nameSecondTeam < sum_nameFirstTeam) {
             System.out.println("Перемогла команда " + nameFirstTeam + ", набрала " + sum_nameFirstTeam + " очків");
         } else {
-            System.out.println("Нечія, команди набрали однакову кількість очків");
+            System.out.println("Нічия, команди набрали однакову кількість очків");
         }
 
 
-        System.out.println(sum_nameFirstTeam + "   " + sum_nameSecondTeam);
+//        System.out.println(sum_nameFirstTeam + "   " + sum_nameSecondTeam);
 
     }
 }
