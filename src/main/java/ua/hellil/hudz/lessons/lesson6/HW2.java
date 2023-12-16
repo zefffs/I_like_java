@@ -13,7 +13,7 @@ public class HW2 {
 
         int numPlayer = 0;
         int pop = 3;
-        int numPC = (int) Math.round(Math.random() * 10);
+        int numPC = 0; //(int) Math.round(Math.random() * 10);
 
         System.out.println("Відгадай ціле число, яке я загадав в діапазоні від 0 до 10.");
 
@@ -22,6 +22,12 @@ public class HW2 {
 //        System.out.println(nuberPC);
 
         while (true){
+
+            if (pop == 0){
+                System.out.println("Ти програв число яке я загадав  " + numPC);
+                break;
+            }
+
             System.out.println( "У тебe " + pop + " спроби!");
             if (scanner.hasNextInt()){
                  numPlayer = scanner.nextInt();
@@ -29,8 +35,10 @@ public class HW2 {
 
 
             } else {
-                System.out.println("Wrong date!!!!");
+                System.out.println("Не коректні дані!!!");
                 scanner.nextLine();
+                pop--;
+                continue;
             }
 
             if (numPC == numPlayer) {
@@ -39,12 +47,6 @@ public class HW2 {
             }
 
             pop--;
-
-            if (pop == 0){
-                System.out.println("Ти програв число яке я загадав  " + numPC);
-                break;
-            }
-
 
         }
     }
