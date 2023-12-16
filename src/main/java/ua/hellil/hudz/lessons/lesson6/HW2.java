@@ -9,6 +9,7 @@ public class HW2 {
 //        діапазоні від 0 до 10
 //        Користувач повинен мати можливість вгадувати в кілька спроб (мінімум 3).
 
+
         Scanner scanner = new Scanner(System.in);
 
         int numPlayer = 0;
