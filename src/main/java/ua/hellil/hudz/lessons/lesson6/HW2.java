@@ -13,8 +13,8 @@ public class HW2 {
         Scanner scanner = new Scanner(System.in);
 
         int numPlayer = 0;
-        int pop = 3;
-        int numPC = 0; //(int) Math.round(Math.random() * 10);
+        int pop = 6;
+        int numPC = (int) Math.round(Math.random() * 10);
 
         System.out.println("Відгадай ціле число, яке я загадав в діапазоні від 0 до 10.");
 
@@ -29,7 +29,11 @@ public class HW2 {
                 break;
             }
 
-            System.out.println( "У тебe " + pop + " спроби!");
+
+
+            System.out.println( "У тебe " + pop + " спроба!");
+
+
             if (scanner.hasNextInt()){
                  numPlayer = scanner.nextInt();
                  scanner.nextLine();
@@ -43,7 +47,7 @@ public class HW2 {
             }
 
             if (numPC == numPlayer) {
-                System.out.println("Ти виграв. Молодець!!!");
+                System.out.println("Ти виграв!!! Молодець!!!");
                 break;
             }
 
