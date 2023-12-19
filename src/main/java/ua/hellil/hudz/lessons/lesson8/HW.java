@@ -95,7 +95,10 @@ public class HW {
             }
         }
 
-        System.out.println("Кількість збігів " + countCoincident);
+        if(countCoincident > 0){
+            System.out.println("Кількість збігів " + countCoincident);
+        }
+
 
 //              виводимо які елементи співпали
 
