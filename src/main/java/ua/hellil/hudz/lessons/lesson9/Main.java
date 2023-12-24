@@ -58,7 +58,7 @@ public class Main {
             }
         }
 
-        // виводимо масив arrмними значеннями
+        // виводимо масив arr
 
         System.out.println();
         for (int i = 0; i < arr.length; i++) {
@@ -68,7 +68,7 @@ public class Main {
             System.out.println();
         }
 
-        // заповнюємо транспонуємо матрицю arr
+        //  транспонуємо матрицю arr
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
