@@ -19,6 +19,12 @@ public class TestMatrixs {
     }
 
     @Test
+    void testArrayHasEmptyArrays(){
+        int [][] array = new int[4][0];
+        Assertions.assertEquals(-3, Matrixs.averageAremetic(array));
+    }
+
+    @Test
     void testIsSquare(){
         int [][] array = new int[2][2];
         Assertions.assertTrue(true == Matrixs.isSquare(array));

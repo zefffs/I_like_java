@@ -13,6 +13,8 @@ public class Matrixs {
 
 //        if array == null ----> -1
 //        if array empty -----> -2
+//        if array has empty arrays ------> -3
+
 //        if array is Square ------> true
 //        else is not square, empty, null ------> false
 //
@@ -20,14 +22,17 @@ public class Matrixs {
         int [][] array = {
                 {},
                 {},
-                {1,3,4}
+                {1,2,3,4}
 
         };
 
-//        int [][] array = new int[1][1];
-        System.out.println(Arrays.toString(array[0]));
-//
+//        int [][] array = new int[2][2];
 //        int [][] array = new int[0][0];
+
+
+
+
+
 
 
         System.out.println(averageAremetic(array));
@@ -42,9 +47,9 @@ public class Matrixs {
            return -1;
        }
 
-//       if (array.length == 0){
-//           return -2;
-//       }
+       if (array.length == 0){
+           return -2;
+       }
 
        int sumMat = 0;
        int count = 0;
@@ -57,7 +62,7 @@ public class Matrixs {
        }
 
        if (sumMat == 0) {
-           return -2;
+           return -3;
        }
 
        return (double) sumMat / count;
