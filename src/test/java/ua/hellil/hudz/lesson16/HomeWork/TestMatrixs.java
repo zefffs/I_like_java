@@ -9,19 +9,19 @@ public class TestMatrixs {
     @Test
     void testNull (){
         int [][] array = null;
-        Assertions.assertEquals(-1, Matrixs.averageAremetic(array));
+        Assertions.assertEquals(-1, Matrixs.averageArithmetic(array));
     }
 
     @Test
     void testEmpty(){
         int [][] array = new int[0][0];
-        Assertions.assertEquals(-2, Matrixs.averageAremetic(array));
+        Assertions.assertEquals(-2, Matrixs.averageArithmetic(array));
     }
 
     @Test
     void testArrayHasEmptyArrays(){
         int [][] array = new int[4][0];
-        Assertions.assertEquals(-3, Matrixs.averageAremetic(array));
+        Assertions.assertEquals(-3, Matrixs.averageArithmetic(array));
     }
 
     @Test

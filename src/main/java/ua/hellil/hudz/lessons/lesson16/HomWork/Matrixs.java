@@ -21,26 +21,19 @@ public class Matrixs {
 
         int [][] array = {
                 {},
-                {},
-                {1,2,3,4}
+
 
         };
 
 //        int [][] array = new int[2][2];
 //        int [][] array = new int[0][0];
 
-
-
-
-
-
-
-        System.out.println(averageAremetic(array));
+        System.out.println(averageArithmetic(array));
         System.out.println(isSquare(array));
 
 
     }
-   public static double averageAremetic (int[][] array ) {
+   public static double averageArithmetic  (int[][] array ) {
 
 
        if (array == null){
